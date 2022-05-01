@@ -1,0 +1,888 @@
+/* My Custom CSS */
+
+body {
+    background-size: cover;
+    background-color: #B1D6FA;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    /* margin-left: 10px; */
+    margin-right: auto;
+	/* padding: 20px 20px 0 20px; */
+	font-family: 'Nunito', sans-serif;
+}
+.header {
+	overflow: hidden;
+	text-align: left;
+	padding: 5px;
+  background-color: #B1D6FA;
+}
+.jumbotron {
+	background-color:#B1D6FA;
+  width: 95%;
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-bottom: -20px;
+}
+
+ul {
+	list-style-type: none;
+}
+a {
+	color: #1B365C;
+	text-decoration: none;
+}
+
+.accordion {
+	max-width: 384px;
+	width: 100%;
+	margin: 30px auto 20px;
+	background: #8DF0D6;
+	border-radius: 0;
+}
+
+.accordion .link {
+	cursor: pointer;
+	display: block;
+	padding: 15px 15px 15px 42px;
+	color: #1B365C;
+	font-size: 25px;
+	font-weight: 100;
+	border-bottom: 1px solid #8DF0D6;
+	position: relative;
+	transition: all 0.4s ease;
+}
+
+.accordion li:last :last-child .link {
+	border-bottom: 0;;
+}
+
+.accordion li i {
+	position: absolute;
+	top: 16px;
+	left: 12px;
+	font-size: 14px;
+	color: #1B365C;
+	transition: all 0.4 ease;
+}
+
+.accordion li i.fa-chevron-down {
+	right: 12px;
+	left: auto;
+	font-size: 16px;
+}
+
+.accordion li.open .link {
+	color: #DFEEF9;
+}
+
+.accordion li.open i {
+	color: #DFEEF9;
+}
+
+.accordion li.open i.fa-chevron-down {
+	transition: rotate (180deg);
+}
+
+.submenu {
+display: none;
+background:#8DF0D6;
+font-size: 14px;
+}
+
+.submenu li {
+	border-bottom: 1px solid #1B365C;
+}
+
+.submenu a {
+	display: block;
+	text-decoration: none;
+	font-size: 17px;
+	color: #1B365C;
+	padding: 12px;
+	padding-left: 42px;
+	transition: all 0.25s ease;
+}
+
+.submenu a:hover {
+	background: #A6F0C8;
+	color: #1B365C;
+}
+
+.mainHeaderFont {
+	font-family: 'Poiret One', cursive; 
+	font-size: 50px;
+	margin-top: -90px;
+	margin-left: 170px;
+  justify-content: center;
+	display: flex;
+}
+
+h1{
+	font-family: 'Nunito', sans-serif; 
+    color: #1B365C;
+    font-size: 50px;
+		margin-left: 150px;
+		display: flex;
+		margin-top: 0px;
+		overflow: hidden;
+}
+p {
+    font-family: 'Nunito', sans-serif;
+		font-size: 22px;
+    padding: 5px;
+		display: center;
+		margin-top: -25px;
+		overflow: hidden;
+		color: #1B365C;
+}
+
+p1 {
+	align-content: left;
+	line-height: 17px;
+	margin-top: 3px;
+	margin-left: 5px;
+	padding: 5px;
+	text-align: left;	
+  background-color: #B1D6FA;
+}
+
+.h2 {
+	color: #1B365C;
+	text-align: left;
+	font-size: 20px;
+	margin: 0px 5px 5px 100px;
+	padding: 5px 25px 51px 25px;
+	height: 15px;
+	width: 100%;
+	line-height: 15px;
+  background-color:#B1D6FA;
+  justify-content: center;
+	display: flex;
+}
+
+h2 {
+	font-family: 'Nunito', sans-serif;
+	text-align: left;
+	font-size: 40px;
+	animation-duration: 8s;
+	animation-name: slidein;
+	animation-iteration-count: infinite;
+	box-shadow: 0 0 10px 0 rgba(12, 26, 66, 0.4) inset;
+	background: linear-gradient(to bottom, #fff 30%, #fcfcfc 40%, #f8f8f8 50%, #f0f0f0 100%);
+	border-radius: 7px;
+}
+@keyframes slidein {
+
+		0% {
+				margin-left: 0%;
+		}
+		50% {
+				margin-left: 150px;
+		}
+		100% {
+				margin-left: 0%;
+		}
+}
+
+h3 {
+	font-size: 25px;
+	Padding: 30px;
+	color: #1B365C;
+}
+
+h4 {
+	color: #1B365C;
+	text-align: left;
+	font-size: 26px;
+	margin-top: -50px;
+	margin-left: 500px;
+	padding: 5px 51px 0px 15px;
+	height: 200px;
+	width: 600px;
+	line-height: 30x;
+  background-color:#B1D6FA;
+	border: 2px solid #1B365C;
+	border-radius: 8px;
+}
+.h7 {
+	margin-left: 20px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	font-size: 35px;
+	display: flex;
+}
+
+.h8 {
+	margin-left: 30px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	font-size: 35px;
+}
+#Logo img {
+	float: center;
+	width: 200px;
+	height: 200px;
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+	padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;;
+  background-color: #B1D6FA;
+}
+
+svg {
+	margin-top: -210px;
+	margin-bottom: -200px;
+	padding: -5px;
+}
+
+.overlay {
+	position: absolute;
+	margin: 50px;
+	width: 100%;
+}
+	
+@media (min-width: 600px) {
+	
+}
+
+@media (max-width: 1000px) {
+	
+}
+
+@media (min-height: 50px) {
+	
+}
+
+@media (max-height: 150px) {
+	
+}
+
+.navbar-light fixed-top {
+	color: #4BB39E;
+}
+
+.modal-header {
+	padding: 30px;
+}
+
+.modal-content {
+color:#1B365C;
+font-size: 20px;
+}
+
+.close {
+	margin: 35px;
+	font-size: 30px;
+}
+#container {
+		width: 50%;
+		height: 50%;
+}
+
+.carousel-caption {
+	position: absolute;
+	bottom: 25px;
+	font-size: 30px;
+	color:#fff;
+	padding: 30px;
+}
+
+.carousel-control-next-icon {
+	height: 90px;
+	width: 80px;
+	color: #1B365C;
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-prev-icon {
+	height: 90px;
+	width: 80px;
+	color:#1B365C;
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-indicators li {
+	height: 20px;
+	font-size: 20px;
+}
+
+.row {
+padding: 10px;
+height: 100px;
+width: 100%;
+background-color: #B1D6FA;
+}
+.headerimage {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+
+.caption {
+		text-align: right;
+}
+.classes1 {
+	display: block;
+	margin: auto;
+	height: 100%;
+}
+
+.flex-container1> div {
+	color: #1B365C;
+	width: 100%;
+	margin: 5px;
+	text-align: right;
+	line-height: 15px;
+	font-size: 30px;
+  background-color:#B1D6FA;
+}
+.flex-container2> div {
+	color: #1B365C;
+	width: 100%;
+	margin: 5px;
+	text-align: right;
+	line-height: 15px;
+	font-size: 30px;
+  background-color: #B1D6FA;
+}
+.calendarClass {
+	margin: 0px 5px 5px 100px;
+	padding: 5px 51px 30px 25px;
+	height: 80px;
+	width: 100%;
+	line-height: 60px;
+  justify-content: center;
+	display: flex;
+}
+
+.form-button1{
+width: 100%;
+height: 20px;
+text-align: right;
+margin-bottom: 20px;
+justify-content: right;
+}
+
+.content{
+	margin-left: 10px;
+	margin-top: 20px;
+	margin-bottom: -10px;
+	font-size: 22px;
+}
+.nav {
+	width: 100%;
+	padding: 5px 5px 5px 5px;
+	background-color:#B1D6FA;
+	line-height: 30px;
+	margin-left: 2px;
+	border-radius: 3px 3px 3px 3px;
+	float: Center;
+	font-size: 25px;
+}
+
+.nav a {
+	display:block;
+  width: 100%;
+	font-family: Arial;
+	Color: #1B365C;
+	text-align: center;
+	padding: 5px 0px 5px 5px;
+	text-decoration: none;
+	font-size: 25px;
+	background-color: #a0b8e7;
+}
+
+.dropdown-content {
+	display: none;
+	font-size: 22px;
+	position: absolute;
+	text-align: center;
+	background-color:#DFEEF9;
+	min-width: 160px;
+	box-shadow: 0px 4px 4px 4px rgba(0,0,0,2);
+	padding: 4px 4px;
+	z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+	font-size: 18px;
+}
+
+
+.clearfix::after,
+.calendar ol::after {
+	content: ".";
+	height: 0;
+	clear: both;
+	visibility:hidden;
+}
+.calendar {
+	border-radius: 40px;
+	height: 100%;
+}
+
+@media (min-width: 992px) {
+	.date {
+		font-size: 3.5rem;
+	}
+}
+.calendar ol li {
+	float: left;
+	width: 14.28571%;
+}
+.calendar .day-names {
+border-bottom: 1px solid #1B365C;
+font-size: 20px;
+}
+.calendar .day-names li {
+	text-transform: uppercase;
+	margin-bottom: 0.5rem;
+}
+.calendar .days li {
+	border-bottom: 1px solid #1B365C;
+	min-height: 8rem;
+}
+.calendar .days li .date {
+	margin: 0.5rem 0;
+}
+.calendar .days li .event {
+	font-size: 0.75rem;
+	padding: 0.3rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	border-radius: 4rem;
+	margin-bottom: 10px;
+	width: 80%;
+}
+
+.calendar .days li .event.span-2 {
+width: 200%;
+}
+.calendar .days li .event.begin {
+	border-radius: 1rem 0 0 1rem;;
+}
+.calendar .days li .event.end {
+	border-radius: 0 1rem 1rem 0;;
+}
+.calendar .days li .event.clear {
+	background: none;
+}
+.calendar .days li:nth-child(n+29) {
+	border-bottom: none;
+}
+.calendar .days li.outside .date {
+	color:#1B365C;
+}
+.demo:hover .event bg-info {
+	animation-name: date;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+}
+.date {
+	border-top: 20px solid #1B365C;
+	height: 100px;
+	font-size: 25px;
+	padding: 5px;
+}
+
+.btn-lg {
+background-color:#4BB39E;
+border: none;
+color: #1B365C;
+padding: 60px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 25px;
+margin: 4px 8px;
+border-radius: 100;
+}
+
+/* *************************** NEW CSS BELOW ************************* */
+.msgAndPicMainDivClass {
+	width: 100%;
+	/*display: flex;
+	justify-content: space-between; */
+}
+
+.msgAndPicMainDivClass div {
+	/*flex: 1; */
+	margin-left: 1px;
+	margin-right: 1px;
+	margin-top: 3px;
+	margin-bottom: 1px;
+	padding: 1px;
+}
+
+.imageDivClass {
+	width: 100%;
+	height: 100%;
+	margin-left: 15px;
+	margin-left: 15px;
+	object-fit: contain;
+	display: flex;
+	justify-content: center;
+}
+
+.parentClass {
+	display: flex;
+	/* justify-content: space-evenly; */
+	flex-direction: column;
+	align-items: center;
+	/*border: 2px solid #1B365C;
+	border-radius: 6px;*/
+	}
+
+.parentClass > button {
+	margin-top: 10px;
+	color: white;
+	background-color: #1B365C;
+	border: none;
+	border-radius: .3em;
+	font-weight: bold;
+}
+
+.parentClass > button:hover {
+	background-color: #4BB39E;
+}
+
+.shop-item {
+	margin: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.shop-item-title {
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin-left: -10px;
+	font-weight: bolder;
+	font-size: 30px;
+	color: #1B365C;
+	margin-bottom: 15px;
+}
+
+.shop-item-date {
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-weight: 100;
+	font-size: 27px;
+	color: #1B365C;
+	margin-bottom: 15px;
+}
+
+.shop-item-material {
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-weight: 100;
+	font-size: 27px;
+	color: #1B365C;
+	margin-bottom: 15px;
+}
+
+.shop-item-image {
+height: 250px;
+}
+
+.shop-item-details {
+	display: flex;
+	align-items: center;
+	padding: 5px;
+	font-size: 20px;
+}
+
+.shop-item-price {
+	flex-grow: 1;
+	color: #1B365C;
+}
+
+.shop-items {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.shop-item-button {
+	padding: 10px;
+}
+
+.cart-header {
+	font-weight: bold;
+	font-size: 1.25em;
+	color: #1B365C;
+}
+
+.cart-column {
+	border-bottom: 1px solid #1B365C;
+	margin-right: 1.5em;
+	padding-bottom: 10px;
+	margin-top: 15px;
+}
+
+.cart-row {
+	display: flex;
+}
+
+.cart-item {
+		width: 45%;
+}
+
+.cart-price {
+		width:  20%;
+		font-size: 1.2em;
+		color: #1B365C;
+}
+
+.cart-quantity {
+		width: 35%;
+}
+
+.cart-size {
+	width: 35%;
+}
+
+.cart-item-title {
+	color: #1B365C;
+  margin-left: .5em;
+	font-size: 1.2em;
+}
+
+.cart-item-image {
+	width: 75px;
+	height: auto;
+	border-radius: 10px;
+}
+
+.btn-info {
+	color: white;
+	background-color: #1B365C;
+	border: none;
+	border-radius: .3em;
+	font-weight: bold;
+}
+
+.btn-info:hover {
+	background-color: #4BB39E;
+}
+
+.cart-quantity-input {
+	height: 34px;
+	width: 50px;
+	border-radius: 5px;
+	border: 1px solid white;
+	background-color: #DFEEF9;
+	color: #1B365C;
+	padding: 0;
+	text-align: center;
+	font-size: 20px;
+	margin-right: 25px;
+}
+
+.cart-size-input {
+	height: 34px;
+	width: 50px;
+	border-radius: 5px;
+	border: 1px solid white;
+	background-color: #DFEEF9;
+	color: #1B365C;
+	padding: 10px;
+	text-align: center;
+	font-size: 20pxm;
+	margin-right: 25px;
+}
+
+.cart-show-time-input {
+	height: 34px;
+	width: 40px;
+	border-radius: 5px;
+	border: 1px solid white;
+	background-color: #DFEEF9;
+	color: #1B365C;
+	padding: 0;
+	text-align: center;
+	font-size: 20px;
+	margin-right: 25px;
+}
+
+.cart-show-time-input:hover {
+		background:#B1D6FA;
+}
+
+.cart-show-time-input,.btn btn-info cart-show-time-button {
+	padding: 12px;
+	font-size: 20px;
+	font-family: 'Nunito', sans-serif;
+	border: none;
+	outline: none;
+	width: 150px;
+	color:#1B365C;
+	transition: 0.3s;
+}
+
+.btn btn-info cart-show-time-button:hover {
+	background-color: #4BB39E;
+}
+
+.list {
+	position: absolute;
+	transform: scaleY(0);
+	transform-origin: top;
+	transform-origin: top;
+	transition: 0.3s;
+}
+
+.newlist {
+	transform: scale(1);
+}
+
+.btn-checkout {
+	color: white;
+	background-color: #1B365C;
+	text-align: right;
+	border: none;
+	border-radius: .3em;
+	font-weight: bold;
+}
+
+.btn-checkout:hover {
+	background-color: #4BB39E;
+}
+.Whattodo {
+	display: flex;
+	/* justify-content: space-evenly; */
+	flex-direction: column;
+	align-items: right;
+}
+
+@media (min-width: 600px) {
+	
+}
+
+@media (max-width: 1200px) {
+
+}
+
+.flex-container content-section {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-container class shadow bg-light p-5 {
+	flex-direction: column;
+}
+	
+.bg-info {
+	font-size: 20px;
+	display: center;
+}
+
+.card {
+	border: 2px solid #1B365C;
+	border-radius: 8px;
+	}
+
+.customJumbotron {
+	margin: 50px;
+}
+
+.msgAndPicMainDivClass {
+	border: 2px solid #1B365C;
+}
+.mainImageDivClass {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	row-gap: 50px;
+	column-gap: 20px;
+}
+.mainImageDivClass .card .card-img-top {
+	width: 30rem;
+	height: 30rem;
+	object-fit: cover;
+}
+
+.cart-icon {
+	margin: 0px 5px 5px 100px;
+	padding: 5px 51px 30px 25px;
+	height: 80px;
+	width: 90%;
+	line-height: 60px;
+  justify-content: right;
+	display: flex;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-evenly;
+	margin-left: 50px;
+	margin-right: 50px;
+	padding: 20px;
+}
+
+._footer {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 20px;
+}
+
+.footer ._footer:first-child {
+	flex: 1;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.footer ._footer:nth-child(2) {
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.footer ._footer:last-child {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-decoration: none;
+}
+
+.footer ._footer:last-child a {
+	text-decoration: none;
+	font-size: 25px;
+}
+
+.socialMediaColor {
+	color: #1B365C;
+}
+
+@media (min-width: 600px) {
+	
+}
+
+@media (max-width: 1000px) {
+	
+}
