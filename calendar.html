@@ -1,0 +1,527 @@
+<!DOCTYPE HTML>
+<html lan="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Seedling Theater, Performance, Acting, Henderson, Nevada, Kids, Musicals, Singing">
+  <meta name="description" content="At Seedling Theater kids learn how to perform and sing">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <title>STC</title>
+  <link href="../CSS/mystyle.css" rel="stylesheet"> 
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NVXM5VH');</script>
+  <!-- End Google Tag Manager -->
+
+  <title>Accordion test</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready( function() {
+
+          // initialize accordion
+          $('#Accordion ul').each( function() {
+            var currentURI = window.location.href;
+            var links = $('a', this);
+            var collapse = true;
+            for (var i = 0; i < links.size(); i++)  {
+                var elem = links.eq(i);
+                var href = elem.attr('href');
+                var hrefLength = href.length;
+                var compareTo = currentURI.substr(-1*hrefLength);
+
+                if (href == compareTo) {
+                    collapse = false;
+                    break;
+                }
+            };
+            if (collapse) {
+                $(this).hide();
+            }
+          });
+
+          $("#Accordion").delegate('span', 'click', function() {
+              var ul = $(this).next('ul');
+              if (ul.is(':visible')) {
+                  ul.slideUp(500);
+              } else {
+                  $('#Accordion ul').not(ul).slideUp(500);
+                  ul.slideDown(500);
+              }
+            });
+          });
+    </script>
+
+</head>
+
+<div class="container-fluid">
+  <nav class="navbar navbar-expand-md navbar-light fixed-top scrolling-navbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a href="#"><i class="bi bi-cart2" style="font-size: 35px"></i></a>
+      </li> &nbsp;
+        <li class="nav-item pl-2 mb-2 mb-mb-0">
+          <a href="#" type="button" class="btn btn bg-info text-white btn-md btn-rounded btn-navbar waves-effect waves-light"> Login</a>
+        </li> &nbsp;
+        <li class="nav-item">
+          <button><a href="#" type="button" class="btn btn bg-info text-white btn-md btn-rounded btn-navbar waves-effect waves-light" data-toggle="modal" data-target="#modalRegisterForm">Sign Up</a></button>
+        </li>
+    </ul>
+</nav>
+</div>
+<!--Modal Sign-In-->
+<div class="modal fade" id="modalRegisterForm" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+        <div header="modal-header">
+          <h3 class="modal-title mx-auto">Sign-Up</h3>
+          <button type="button" class="close ml-0" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+            <div class="md-form md-outline">
+                <i class="bi bi-door-open"></i>
+                  <input type="text" id="modalRegisterForm-name" class="form-control">
+                  <label data-error="wrong" data-success="right" for="modalRegisterForm">Your Name</label>
+            </div>
+
+            <div class="md-form md-outline">
+              <i class="bi bi-envelope-fill"></i>
+              <input type="text" id="modalRegisterForm-name" class="form-control">
+              <label data-error="wrong" data-success="right" for="modalRegisterForm">Your Email</label>
+            </div>
+
+            <div class="md-form md-outline">
+              <i class="bi bi-lock"></i>
+                <input type="text" id="modalRegisterForm-name" class="form-control">
+                <label data-error="wrong" data-success="right" for="modalRegisterForm">Your Password</label>
+              </div>
+              
+              <div class="md-form md-outline">
+                <button><a href="#" type="button" class="btn btn bg-info text-white btn-md btn-rounded btn-navbar">Sign Up</a></button> 
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NVXM5VH"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <!-- <div class="jumbotron text-left" style="margin-bottom: 0"> -->
+  <div class="container-fluid">
+    <div class="header">
+      <div id="Logo">
+        <img src="../IMAGES/PurpleLOGO-01.png" alt="Logo" width="220" height="220">
+      </div>
+      <h1 class="mainHeaderFont">Seedling Theater Company in Henderson, NV</h1>
+      <div class="h2">Where young performers are grown</div>
+      
+      <div class="#">
+        <div class="calendarClass">
+          <button class="btn btn bg-info text-white" type="button"><i class="bi bi-calendar-check"></i>&nbsp;View Events</button>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <!-- mb-5 is a bootstrap class that will set the bottom margin -->
+      <div class="Nav">
+        <div class="d-flex flex-row bg-grey justify-content-around">
+        <a href="../HTML5/index.html">About Us</a>
+        <a href="../HTML/classes.html">Classes</a>
+        <a href="../HTML/calendar.html"><b>Calendar</b></a>
+        <a href="../HTML/store.html">Store</a>
+        <a href="../HTML/photos.html">Photos</a>
+        </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <!-- Outline of Calendar-->
+        <header class="text-center text-black mb-5">
+          &nbsp;
+          <h3><b>Checkout classes offered this Summer!</b></h3>
+        </header>
+      
+      <!--Calendar-->
+      <div class="calendar shadow bg-white p-5">
+        <div class="d-flex align-items-center"><i class="bi bi-calendar-check" style="font-size:30px"></i>
+          <div class="dropdown"><h1 class="month font-weight-bold mb-0 text-uppercase"><span>JUNE 2022 </span></h1><div class="dropdown-content">January <br> February <br> March <br> April <br> May <br> June <br> July <br> August <br> September <br> October <br> November <br> December <br></div></div>
+        </div>
+      
+      <!--Initialize Accordion-->
+      <ul id="Accordion" class="accordion">
+        <li>
+            <span><div class="link"><i class="bi bi-caret-down-fill" style="font-size: 30px"></i>&nbsp;Auditions</div></span>
+            <ul class="submenu">
+            <li><a href="#">Frozen - in June</a></li>
+            <li><a href="#">Lion King - in June</a></li>
+            <li><a href="#">Mulan - in June</a></li>
+            <li><a href="#">Little Women - in July</a></li>
+            <li><a href="#">Wizard of Oz - in July</a></li>
+            <li><a href="#">Munchkins - in July</a></li>
+            </ul>
+        </li>
+      
+        <li>
+          <span><div class="link"><i class="bi bi-caret-down-fill"style="font-size: 30px"></i>Classes</div></span>
+          <ul class="submenu">
+            <li><a href="">Frozen</a></li>
+            <li><a href="">Lion King</a></li>
+            <li><a href="">Mulan</a></li>
+            </ul>
+        </li>
+          <li>
+              <span><div class="link"><i class="bi bi-caret-down-fill"style="font-size: 30px"></i>Summer Camps</div></span>
+                <ul class="submenu">
+                    <li><a href="#">Little Women</a></li>
+                    <li><a href="#">Munchkins</a></li>
+                    <li><a href="#">Wizard of Oz</a></li>
+                </ul>
+           </li>
+          <li>
+              <span>- Intro Classes</span>
+              <ul>
+                  <li><a href="#">Sprouts   3-4 years old</a></li>
+                  <li><a href="#">Munchkins   5-6 years old</a></li>
+              </ul>
+          </li>
+          <li>
+            <span>- Play roles</span>
+            <ul>
+                <li><a href="#">Principal role</a></li>
+                <li><a href="#">Understudy</a></li>
+                <li><a href="#">Alternate</a></li>
+                <li><a href="#">Swing</a></li>
+                <li><a href="#">Ensemble</a></li>
+                <li><a href="#">Standby</a></li>
+            </ul>
+        </li>
+        <li>
+          <span>- Additional Classes</span>
+          <ul>
+              <li><a href="#">Singing</a></li>
+              <li><a href="#">Dancing</a></li>
+          </ul>
+      </li>
+      </ul>
+      
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="text">Checkout Exciting Information</span>
+            </button>
+          </div>
+      
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Classes coming in 2023 <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#" target="blank">Coco</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Soul</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Turning Red</a></li>
+                  <li role="separator" class="divider"></li>
+                </ul>
+              </li>
+
+                <li><a href="#"><span class="text-black" target="_blank">Costume Design & Construction</span></a></li>
+              
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Instructors <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Brianna</a></li>
+                  <li><a href="#">Britni</a></li>
+                  <li><a href="#">Danni</a></li>
+                  <li><a href="#">Emma</a></li>
+                  <li><a href="#">Kalena</a></li>
+                  <li><a href="#">Kris</a></li>
+                  <li><a href="#">Samantha</a></li>
+                  <li><a href="#">Tristine</a></li>
+                </ul>
+              </li>
+      
+              <li class="active"><a href="#">Showcase Cast <span class="sr-only">(current)</span></a></li>
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Summer Camp 2023 <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Lightyear</a></li>
+                  <li><a href="#">Luca</a></li>
+                  <li><a href="#">Onward</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Stage Design & Setup</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Register Now!</a></li>
+            </ul>
+          </div>
+        </div>
+        </nav>
+<br>
+          <p class="font-italic text-muted mb-5">Any questions? Contact Kris!</p>
+          <ol class="day-names list-unstyled">
+        <li class="font-weight-bold text-uppercase">Sun</li>
+        <li class="font-weight-bold text-uppercase">Mon</li>
+        <li class="font-weight-bold text-uppercase">Tue</li>
+        <li class="font-weight-bold text-uppercase">Wed</li>
+        <li class="font-weight-bold text-uppercase">Thu</li>
+        <li class="font-weight-bold text-uppercase">Fri</li>
+        <li class="font-weight-bold text-uppercase">Sat</li>
+      </ol>
+      
+      <ol class="days list-unstyled">
+        <li>
+          <div class="date"></div>
+        </li>
+        <li>
+          <div class="date"></div>
+        </li>
+        <li>
+          <div class="date"></div>
+        </li>
+        <li>
+          <div class="date">1</div>
+          <p><b>Auditions 7-11 years</b></p>
+          <div class="event bg-secondary text-white">Frozen 10am</div>
+          <div class="event bg-secondary text-white">Lion King 12pm</div>
+          <div class="event bg-secondary text-white">Mulan 2pm</div>
+        </li>
+        <li>
+          <div class="date">2</div>
+          <p><b>Auditions 12-18</b></p>
+          <div class="event bg-secondary text-white">Frozen 2pm</div>
+          <div class="event bg-secondary text-white">Lion King 4pm</div>
+          <div class="event bg-secondary text-white">Mulan 6pm</div>
+        </li>
+        <li>
+          <div class="date">3</div>
+          <p>Classes 7-11 years </p>
+          <div class="event bg-primary text-white">Frozen 12pm</div>
+          <div class="event bg-primary text-white">Lion King 1pm</div>
+          <div class="event bg-primary text-white">Mulan 2pm</div>
+        </li>
+        <li>
+          <div class="date">4</div>
+          <p>Classes 12-18 years </p>
+          <div class="event bg-primary text-white">Frozen 12pm</div>
+          <div class="event bg-primary text-white">Lion King 1pm</div>
+          <div class="event bg-primary text-white">Mulan 2pm</div>
+        </li>
+        <li>
+          <div class="date">5</div>
+        </li>
+        <li>
+          <div class="date">6</div>
+          <p>Classes 7-11 years </p>
+          <div class="event bg-primary text-white">Frozen 10am</div>
+          <div class="event bg-primary text-white">Lion King 1pm</div>
+          <div class="event bg-primary text-white">Mulan 4pm</div>
+        </li>
+        <li>
+          <div class="date">7</div>
+          <p>Classes 12-18 years </p>
+          <div class="event bg-primary text-white">Frozen 10am</div>
+          <div class="event bg-primary text-white">Lion King 1pm</div>
+          <div class="event bg-primary text-white">Mulan 4pm</div>
+        </li>
+        <li>
+          <div class="date">8</div>
+          <p>Classes 7-11 years </p>
+          <div class="event bg-primary text-white">Frozen 10am</div>
+          <div class="event bg-primary text-white">Lion King 1pm</div>
+          <div class="event bg-primary text-white">Mulan 4pm</div>
+        </li>
+        <li>
+          <div class="date">9</div>
+          <p>Classes 12-18 years </p>
+          <div class="event bg-primary text-white">Frozen 10am</div>
+          <div class="event bg-primary text-white">Lion King 1pm</div>
+          <div class="event bg-primary text-white">Mulan 4pm</div>
+        </li>
+        <li>
+          <div class="date">10</div>
+          <p>Classes 7-11 years </p>
+          <div class="event bg-primary text-white">Frozen 10am</div>
+          <div class="event bg-primary text-white">Lion King 1pm</div>
+          <div class="event bg-primary text-white">Mulan 4pm</div>
+        </li>
+        <li>
+          <div class="date">11</div>
+          <p>Classes 12-18 years </p>
+          <div class="event bg-primary text-white">Frozen 10am</div>
+          <div class="event bg-primary text-white">Lion King 1pm</div>
+          <div class="event bg-primary text-white">Mulan 4pm</div>
+        </li>
+        <li>
+          <div class="date">12</div>
+        </li>
+        <li>
+          <div class="date">13</div>
+          <p>Classes 7-11 years </p>
+          <div class="event bg-primary text-white">Frozen 10am</div>
+          <div class="event bg-primary text-white">Lion King 1pm</div>
+          <div class="event bg-primary text-white">Mulan 4pm</div>
+        </li>
+        <li>
+          <div class="date">14</div>
+          <p>Classes 12-18 years </p>
+          <div class="event bg-primary text-white">Frozen 10am</div>
+          <div class="event bg-primary text-white">Lion King 1pm</div>
+          <div class="event bg-primary text-white">Mulan 4pm</div>
+        </li>
+        <li>
+          <div class="date">15</div>
+          <p>Classes 7-11 years </p>
+          <div class="event bg-primary text-white">Frozen 10am</div>
+          <div class="event bg-primary text-white">Lion King 1pm</div>
+          <div class="event bg-primary text-white">Mulan 4pm</div>
+        </li>
+        <li>
+          <div class="date">16</div>
+          <p>Classes 12-18 years </p>
+          <div class="event bg-primary text-white">Frozen 10am</div>
+          <div class="event bg-primary text-white">Lion King 1pm</div>
+          <div class="event bg-primary text-white">Mulan 4pm</div>
+        </li>
+        <li>
+          <div class="date">17</div>
+          <p>Costume Fitting 7-11 years </p>
+          <div class="event bg-secondary text-white">Frozen 12pm</div>
+          <div class="event bg-secondary text-white">Lion King 2pm</div>
+          <div class="event bg-secondary text-white">Mulan 4pm</div>
+        </li>
+        <li>
+          <div class="date">18</div>
+          <p>Costume Fitting 12-18 years </p>
+          <div class="event bg-secondary text-white">Frozen 12pm</div>
+          <div class="event bg-secondary text-white">Lion King 2pm</div>
+          <div class="event bg-secondary text-white">Mulan 4pm</div>
+        </li>
+        <li>
+          <div class="date">19</div>
+        </li>
+        <li>
+          <div class="date">20</div>
+          <p>Rehearsal</p>
+          <div class="event bg-info text-black">Frozen 10am</div>
+          <div class="event bg-info text-black">Lion King 1pm</div>
+          <div class="event bg-info text-black">Mulan 3pm</div>
+        </li>
+        <li>
+          <div class="date">21</div>
+          <p>Rehearsal</p>
+          <div class="event bg-info text-black">Frozen 10am</div>
+          <div class="event bg-info text-black">Lion King 1pm</div>
+          <div class="event bg-info text-black">Mulan 3pm</div>
+        </li>
+        <li>
+          <div class="date">22</div>
+          <p>Plays</p>
+          <div class="event bg-primary text-black">Frozen 2pm</div>
+          <div class="event bg-primary text-black">Frozen 4pm</div>
+          <div class="event bg-primary text-black">Frozen 6pm</div>
+        </li>
+        <li>
+          <div class="date">23</div>
+          <p>Plays</p>
+          <div class="event bg-primary text-black">Lion King 2pm</div>
+          <div class="event bg-primary text-black">Lion King 4pm</div>
+          <div class="event bg-primary text-black">Lion King 6pm</div>
+        </li>
+        <li>
+          <div class="date">24</div>
+          <p>Plays</p>
+          <div class="event bg-primary text-black">Mulan 2pm</div>
+          <div class="event bg-primary text-black">Mulan 4pm</div>
+          <div class="event bg-primary text-black">Mulan 6pm</div>
+        </li>
+        <li>
+          <div class="date">25</div>
+        </li>
+        <li> 
+      </ol>
+      </div>
+      </div>
+</div>
+
+<section class="container content-section">
+    <div class="shop-items">
+      <div class="shop-item">
+        <span class="shop-item-title">Frozen Show</span>
+        <img class="shop-item-image" src="../IMAGES/OPT-Frozen-button.png">
+        <div class="shop-item-details">
+          <span class="shop-item-price">$25.00</span>&nbsp;
+          <button class="btn btn-info shop-item-button" type="button">Buy tickets</button> &nbsp;
+          <button class="btn btn-info shop-item-button" type="button">More Info</button>
+        </div>
+      </div>
+        
+      <div class="shop-item">
+        <span class="shop-item-title">Lion King Show</span>
+        <img class="shop-item-image" src="../IMAGES/OPT-LK-button.png">
+        <div class="shop-item-details">
+          <span class="shop-item-price">$25.00</span>&nbsp;
+          <button class="btn btn-info shop-item-button" type="button">Buy tickets</button> &nbsp;
+          <button class="btn btn-info shop-item-button" type="button">More Info</button>
+        </div>
+      </div>
+      
+      <div class="shop-item">
+        <span class="shop-item-title">Mulan Show</span>
+        <img class="shop-item-image" src="../IMAGES/OPT-Mulan-button.png">
+        <div class="shop-item-details">
+          <span class="shop-item-price">$25.00</span>&nbsp;
+          <button class="btn btn-info shop-item-button" type="button">Buy Tickets</button> &nbsp;
+          <button class="btn btn-info shop-item-button" type="button">More Info</button>
+        </div>
+      </div> 
+  </div>
+</section>
+
+<div class="footer">
+  <div class="_footer">
+    <div>
+      <a href="#">
+        <i class="bi bi-instagram" style="font-size: 35px"></i>
+      </a>
+    </div>
+    <div><a href="#"><i class="bi bi-facebook" style="font-size: 35px"></i></a></div>
+    <div><a href="#"><i class="bi bi-youtube" style="font-size: 35px"></i></a></div>
+    <div><a href="#"><i class="bi bi-slack" style="font-size: 35px"></i></a></div>
+  </div>
+  <div class="_footer">
+    <span class="h5">980 American Pacific Drive, Henderson, NV 89014</span>
+    <span class="h6"><strong>Kris Blake - Director | (702) 286-7242</strong></span>
+    <span>Copyright &copy; Seedling Theatre Company 2022</span>
+  </div>
+  <div class="_footer">
+    <div><a href="#">Contact Us</a></div>
+    <div><a href="#">Forms</a></div>
+    <div><a href="#">Reviews</a></div>
+  </div>
+</div>
+
+    </body>
+    </html>
